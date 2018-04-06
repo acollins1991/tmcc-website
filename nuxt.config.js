@@ -10,13 +10,24 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Montserrat:700' }
     ]
   },
   /*
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+  /*
+   ** CSS or SCSS
+   */
+  css: ['@/assets/app.scss'],
+  /*
+   ** Plugins
+   */
+  plugins: [
+     { src: '~/plugins/uikit.js', ssr: false }
+  ],
   /*
   ** Build configuration
   */

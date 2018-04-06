@@ -1,0 +1,22 @@
+// 1. Your custom variables and variable overwrites.
+
+// COLOURS
+
+// FONTS
+$global-font-family: 'Merriweather', serif;
+$global-font-size: 18px;
+
+// GLOBAL VARIABLE CHANGES RELATING TO UIKIT
+
+// Import default variables and available mixins.
+@import "../node_modules/uikit/src/scss/variables.scss";
+@import "../node_modules/uikit/src/scss/mixins.scss";
+
+// Your custom mixin overwrites
+
+// Your custom components
+/** Navbar **/
+$navbar-nav-item-height: 200px;
+
+// Import UIkit.
+@import "../node_modules/uikit/src/scss/uikit.scss";
