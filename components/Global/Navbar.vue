@@ -2,7 +2,9 @@
 <div class="uk-container">
   <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
     <div class="uk-navbar-left">
-        <a class="uk-navbar-item uk-logo" href="#">TMCC.</a>
+        <a class="uk-navbar-item uk-logo" href="#">
+          <img src="/images/LOGO.svg">
+        </a>
     </div>
     <div class="uk-navbar-right">
       <ul class="uk-navbar-nav">
@@ -22,5 +24,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+.uk-logo {
+    img {
+        width: 135px;
+    }
+}
 </style>
