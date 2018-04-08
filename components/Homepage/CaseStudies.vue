@@ -25,16 +25,16 @@
     <div class="uk-grid-medium uk-child-width-1-2" uk-grid-parallax>
 
       <template v-for="(casestudy, index) in casestudies">
-        <a v-bind:key="index" v-bind:href="casestudy.link" class="uk-display-block uk-link-reset tmcc-case-studies__case-study">
-          <div class="uk-flex uk-flex-bottom uk-flex-between uk-margin-bottom">
-            <h2 class="uk-h3 uk-margin-remove" v-text="casestudy.title"></h2>
-            <span class="uk-text-small">View the project <span uk-icon="icon: arrow-right"></span></span>
-          </div>
-          <div class="uk-height-large uk-cover-container">
-            <img v-bind:src="casestudy.image" uk-cover>
-          </div>
-          <span class="uk-text-muted uk-text-center uk-text-small uk-display-block uk-margin-top uk-margin-bottom">Hosting, Web Design, Paid Ads</span>
-        </a>
+          <a v-bind:key="index" v-bind:href="casestudy.link" class="uk-display-block uk-link-reset tmcc-case-studies__case-study">
+            <div class="uk-flex uk-flex-bottom uk-flex-between uk-margin-bottom">
+              <h2 class="uk-h3 uk-margin-remove" v-text="casestudy.title"></h2>
+              <span class="uk-text-small">View the project <span uk-icon="icon: arrow-right"></span></span>
+            </div>
+            <div class="uk-height-large uk-cover-container">
+              <img v-bind:src="casestudy.image" uk-cover>
+            </div>
+            <span class="uk-text-muted uk-text-center uk-text-small uk-display-block uk-margin-top uk-margin-bottom">Hosting, Web Design, Paid Ads</span>
+          </a>
       </template>
 
     </div>
@@ -109,23 +109,21 @@ export default {
         align-self: flex-end;
     }
     &__link {
-      padding:24px;
+        padding: 24px;
         transform: translateY(24px);
         span {
             &.view-project {
                 float: right;
                 background-color: inherit;
                 padding: 8px;
-                transition:transform .25s;
+                transition: transform 0.25s;
             }
-            &.title {
-
-            }
+            &.title {}
         }
         &:hover {
-          span.view-project {
-              transform: translateX(50px);
-          }
+            span.view-project {
+                transform: translateX(50px);
+            }
         }
     }
 }
