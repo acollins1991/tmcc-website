@@ -22,7 +22,7 @@
 
   <!-- Case Studies -->
   <div class="uk-container uk-container-small tmcc-case-studies">
-    <div class="uk-grid-medium uk-child-width-1-2 uk-flex uk-flex-wrap" uk-grid-parallax>
+    <div class="uk-grid-medium uk-child-width-1-2" uk-grid-parallax>
 
       <template v-for="(casestudy, index) in casestudies">
         <a v-bind:key="index" v-bind:href="casestudy.link" class="uk-display-block uk-link-reset tmcc-case-studies__case-study">
