@@ -1,5 +1,5 @@
 <template>
-<div class="uk-container">
+<div class="uk-container uk-container-small">
   <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
     <div class="uk-navbar-left">
         <a class="uk-navbar-item uk-logo" href="#">
@@ -27,7 +27,7 @@ export default {
 <style lang="scss" scoped>
 .uk-logo {
     img {
-        width: 135px;
+        width: 150px;
     }
 }
 </style>

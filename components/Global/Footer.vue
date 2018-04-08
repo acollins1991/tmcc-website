@@ -11,7 +11,7 @@
           <a href="#" class="uk-link-reset uk-display-block">
             <article class="uk-flex" uk-grid>
               <div class="uk-width-3-4">
-                <h1 class="uk-h4">30 seconds with Chloe Alfano</h1>
+                <h1 class="uk-h5">30 seconds with Chloe Alfano</h1>
                 <a href="#" class="uk-link-reset uk-text-muted uk-text-small">read more ></a>
               </div>
               <div class="uk-width-1-4 uk-flex-first">
@@ -25,7 +25,7 @@
           <a href="#" class="uk-link-reset uk-display-block">
             <article class="uk-flex" uk-grid>
               <div class="uk-width-3-4">
-                <h1 class="uk-h4">Fake news and the impact on marketing</h1>
+                <h1 class="uk-h5">Fake news and the impact on marketing</h1>
                 <a href="#" class="uk-link-reset uk-text-muted uk-text-small">read more ></a>
               </div>
               <div class="uk-width-1-4 uk-flex-first">
@@ -39,7 +39,7 @@
           <a href="#" class="uk-link-reset uk-display-block">
             <article class="uk-flex" uk-grid>
               <div class="uk-width-3-4">
-                <h1 class="uk-h4">Sed accumsan maximus augue sed malesuada</h1>
+                <h1 class="uk-h5">Sed accumsan maximus augue sed malesuada</h1>
                 <a href="#" class="uk-link-reset uk-text-muted uk-text-small">read more ></a>
               </div>
               <div class="uk-width-1-4 uk-flex-first">
@@ -51,17 +51,17 @@
         </div>
 
         <!-- SOCIAL -->
-        <div class="uk-width-3-5" style="transform:translateY(-75px);">
+        <div class="uk-width-3-5" style="transform:translateY(-190px);">
 
           <div class="uk-grid-collapse uk-flex uk-flex-bottom" uk-grid>
 
             <div class="uk-width-1-2 uk-height-large uk-cover-container">
-              <img src="https://source.unsplash.com/random/800x800" uk-cover>
+              <img src="http://via.placeholder.com/600x600" uk-cover>
               <div class="uk-position-bottom-left uk-padding-small">
                 Follow us on Instagram
               </div>
             </div>
-            <div class="uk-width-1-2">
+            <div class="uk-width-1-2 uk-height-medium uk-light uk-background-secondary">
               test
             </div>
 
@@ -69,6 +69,11 @@
 
         </div>
 
+      </div>
+
+      <div class="uk-flex uk-flex-column uk-flex-center uk-padding">
+        <h2 class="uk-text-center">Have a project in mind?</h2>
+        <a class="uk-button uk-button-default" href="">Get Started <span uk-icon="icon: arrow-right"></span></a>
       </div>
     </div>
   </footer>

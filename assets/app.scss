@@ -17,6 +17,7 @@ $global-font-size: 18px;
 // Your custom components
 /** Navbar **/
 $navbar-nav-item-height: 200px;
+$navbar-nav-item-font-family: 'Montserrat', sans-serif;
 
 // Import UIkit.
 @import "../node_modules/uikit/src/scss/uikit.scss";
