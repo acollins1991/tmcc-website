@@ -8,7 +8,7 @@
         <div class="tmcc-featured-case-study__link-container">
           <a v-bind:href="featuredCaseStudy.link" class="uk-display-block uk-link-reset uk-background-secondary uk-light uk-flex uk-flex-column tmcc-featured-case-study__link">
             <span class="uk-display-block uk-margin-small-bottom uk-light view-project">View Project <span uk-icon="icon: arrow-right"></span></span>
-            <h2 class="uk-h3 uk-margin-remove title">Now Health</h2>
+            <h2 class="uk-h3 uk-margin-remove title" v-text="featuredCaseStudy.title">Now Health</h2>
           </a>
         </div>
         <div style="align-self: center;">
@@ -51,20 +51,20 @@ export default {
   data() {
     return {
       featuredCaseStudy: {
-        title: '30 Euston Square 1',
+        title: 'Searcys',
         link: '#',
-        image: 'https://source.unsplash.com/random/1500x450'
+        image: 'https://source.unsplash.com/random/1500x500'
       },
       casestudies: [{
-        title: '30 Euston Square 1',
+        title: 'Now Health',
         link: '#',
         image: 'https://source.unsplash.com/random/600x600'
       }, {
-        title: '30 Euston Square 2',
+        title: 'Platform7Teen',
         link: '#',
         image: 'https://source.unsplash.com/random/600x600'
       }, {
-        title: '30 Euston Square 3',
+        title: '30 Euston Square',
         link: '#',
         image: 'https://source.unsplash.com/random/600x600'
       }, {
