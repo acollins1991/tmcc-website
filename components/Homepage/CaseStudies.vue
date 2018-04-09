@@ -21,11 +21,11 @@
   </div>
 
   <!-- Case Studies -->
-  <div class="uk-container uk-container-small tmcc-case-studies">
-    <div class="uk-grid-medium uk-child-width-1-2" uk-grid-parallax>
+  <div class="tmcc-case-studies">
 
-      <template v-for="(casestudy, index) in casestudies">
-          <a v-bind:key="index" v-bind:href="casestudy.link" class="uk-display-block uk-link-reset tmcc-case-studies__case-study">
+    <template v-for="(casestudy, index) in casestudies">
+        <div v-bind:key="index" class="uk-padding-small tmcc-case-studies__case-study">
+          <a v-bind:key="index" v-bind:href="casestudy.link" class="uk-display-block uk-link-reset">
             <div class="uk-flex uk-flex-bottom uk-flex-between uk-margin-bottom">
               <h2 class="uk-h3 uk-margin-remove" v-text="casestudy.title"></h2>
               <span class="uk-text-small">View the project <span uk-icon="icon: arrow-right"></span></span>
@@ -35,16 +35,16 @@
             </div>
             <span class="uk-text-muted uk-text-center uk-text-small uk-display-block uk-margin-top uk-margin-bottom">Hosting, Web Design, Paid Ads</span>
           </a>
+        </div>
       </template>
 
-    </div>
   </div>
 
 </section>
 </template>
 
 <script>
-import ScrollReveal from 'scrollreveal'
+import Masonry from 'masonry-layout'
 
 export default {
   name: 'CaseStudies',
@@ -83,8 +83,14 @@ export default {
     }
   },
   mounted() {
-    window.sr = ScrollReveal()
-    window.sr.reveal('.tmcc-case-studies__case-study')
+
+    var elem = document.querySelector('.tmcc-case-studies')
+    var msnry = new Masonry(elem, {
+      // options
+      itemSelector: '.tmcc-case-studies__case-study',
+      percentPosition: true
+    })
+
   }
 }
 </script>
@@ -128,8 +134,18 @@ export default {
     }
 }
 .tmcc-case-studies {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
     &__case-study {
-        &:nth-child(2n+0) {}
+        box-sizing: border-box;
+        display: block;
+        float: left;
+        width: 50%;
+        &:nth-child(2) {
+            margin-top: 100px;
+        }
     }
 }
 </style>

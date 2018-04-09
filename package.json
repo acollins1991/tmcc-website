@@ -13,10 +13,10 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "masonry-layout": "^4.2.1",
     "node-sass": "^4.8.3",
     "nuxt": "^1.0.0",
     "sass-loader": "^6.0.7",
-    "scrollreveal": "^3.4.0",
     "uikit": "^3.0.0-beta.42"
   },
   "devDependencies": {
