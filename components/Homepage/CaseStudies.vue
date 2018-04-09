@@ -94,10 +94,10 @@ export default {
     position: relative;
     &__overlay {
         position: absolute;
-        top: 0;
+        top: -5%;
         right: 0;
         width: 100%;
-        height: 100%;
+        height: 110%;
         background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%);
         z-index: 1;
     }
