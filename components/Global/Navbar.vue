@@ -8,10 +8,10 @@
     </div>
     <div class="uk-navbar-right">
       <ul class="uk-navbar-nav">
-        <li><a href="uk-active">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Contact</a></li>
+        <nuxt-link tag="li" active-class="uk-active" exact to="/"><a>Home</a></nuxt-link>
+        <nuxt-link tag="li" active-class="uk-active" exact to="/about"><a>About</a></nuxt-link>
+        <nuxt-link tag="li" active-class="uk-active" exact to="/blog"><a>Blog</a></nuxt-link>
+        <nuxt-link tag="li" active-class="uk-active" exact to="/contact"><a>Contact</a></nuxt-link>
       </ul>
     </div>
   </nav>

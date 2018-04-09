@@ -71,11 +71,21 @@
 
       </div>
 
-      <div class="uk-flex uk-flex-column uk-flex-center uk-padding">
+      <div class="uk-flex uk-flex-column uk-flex-center uk-flex-none uk-padding">
         <h2 class="uk-text-center">Have a project in mind?</h2>
-        <a class="uk-button uk-button-default" href="">Get Started <span uk-icon="icon: arrow-right"></span></a>
+        <a class="uk-button uk-button-default uk-flex-none" href="">Get Started <span uk-icon="icon: arrow-right"></span></a>
       </div>
     </div>
+
+    <div class="uk-flex">
+      <a class="uk-display-block uk-link-reset uk-width-2-5 uk-background-primary uk-padding uk-text-center">
+        <span style="color:#ffffff;">About Us <span uk-icon="icon: arrow-right; ratio: 2;"></span></span>
+      </a>
+      <a class="uk-display-block uk-link-reset uk-width-3-5 uk-padding uk-text-center" style="background-color:#6640d6;">
+        <span style="color:#ffffff;">Read more from our blog <span uk-icon="icon: arrow-right; ratio: 2;"></span></span>
+      </a>
+    </div>
+
   </footer>
 </template>
 

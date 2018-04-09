@@ -7,6 +7,7 @@ $global-font-family: 'Merriweather', serif;
 $global-font-size: 18px;
 
 // GLOBAL VARIABLE CHANGES RELATING TO UIKIT
+$global-primary-background: #5031a9;
 
 // Import default variables and available mixins.
 @import "../node_modules/uikit/src/scss/variables.scss";
@@ -21,3 +22,11 @@ $navbar-nav-item-font-family: 'Montserrat', sans-serif;
 
 // Import UIkit.
 @import "../node_modules/uikit/src/scss/uikit.scss";
+
+// Page transitions
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s
+}
+.page-enter, .page-leave-active {
+  opacity: 0
+}
