@@ -24,6 +24,11 @@ $navbar-nav-item-font-family: 'Montserrat', sans-serif;
 @import "../node_modules/uikit/src/scss/uikit.scss";
 
 // Page transitions
+  // on first page load
+body {
+  transition: opacity .5s;
+}
+
 .page-enter-active, .page-leave-active {
   transition: opacity .5s
 }

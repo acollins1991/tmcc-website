@@ -3,6 +3,9 @@ module.exports = {
   ** Headers of the page
   */
   head: {
+    bodyAttrs: {
+      style: 'opacity:0;'
+    },
     title: 'tmcc-v2',
     meta: [
       { charset: 'utf-8' },
@@ -26,6 +29,7 @@ module.exports = {
    ** Plugins
    */
   plugins: [
+      {src: '~/plugins/firstLoad.js', ssr: false},
      { src: '~/plugins/uikit.js', ssr: false }
   ],
   /*
