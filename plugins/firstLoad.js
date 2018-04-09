@@ -5,6 +5,6 @@ export default function ({ app }) {
     setTimeout(function(){
       // remove opacity styling
       document.body.removeAttribute("style")
-    }, 500)
+    }, 3000)
   })
 }

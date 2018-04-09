@@ -5,6 +5,11 @@
 // FONTS
 $global-font-family: 'Merriweather', serif;
 $global-font-size: 18px;
+$base-blockquote-font-style: normal;
+// custom utility to change font to Montserrat
+.tmcc-font-montserrat {
+  font-family: 'Montserrat', sans-serif!important;
+}
 
 // GLOBAL VARIABLE CHANGES RELATING TO UIKIT
 $global-primary-background: #5031a9;

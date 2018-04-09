@@ -30,13 +30,19 @@
               <h2 class="uk-h3 uk-margin-remove" v-text="casestudy.title"></h2>
               <span class="uk-text-small">View the project <span uk-icon="icon: arrow-right"></span></span>
             </div>
-            <div class="uk-height-large uk-cover-container">
+            <div class="uk-cover-container tmcc-case-studies__case-study-image">
               <img v-bind:src="casestudy.image" uk-cover>
             </div>
-            <span class="uk-text-muted uk-text-center uk-text-small uk-display-block uk-margin-top uk-margin-bottom">Hosting, Web Design, Paid Ads</span>
+            <span class="uk-text-muted uk-text-center uk-text-small uk-display-block uk-margin-top uk-margin-bottom" v-text="casestudy.services">Hosting, Web Design, Paid Ads</span>
           </a>
+          <div class="uk-padding-small uk-margin-large-top uk-margin-large-bottom tmcc-case-studies__testimonial" v-if="casestudy.testimonial.show">
+            <blockquote>
+              <p v-text="casestudy.testimonial.quote"></p>
+              <footer v-text="casestudy.testimonial.source"></footer>
+            </blockquote>
+          </div>
         </div>
-      </template>
+    </template>
 
   </div>
 
@@ -58,27 +64,63 @@ export default {
       casestudies: [{
         title: 'Now Health',
         link: '#',
-        image: 'https://source.unsplash.com/random/600x600'
+        image: 'https://source.unsplash.com/random/600x600',
+        services: 'Hosting, Web Design, Paid Ads',
+        testimonial: {
+          show: true,
+          quote: "I wouldn't hesitate to use The Marketing Campaign Company again or receommend them to anybody",
+          source: 'Johanna Bryne, Searcys'
+        }
       }, {
         title: 'Platform7Teen',
         link: '#',
-        image: 'https://source.unsplash.com/random/600x600'
+        image: 'https://source.unsplash.com/random/600x600',
+        services: 'Hosting, Web Design, Paid Ads',
+        testimonial: {
+          show: false,
+          quote: "",
+          source: ''
+        }
       }, {
         title: '30 Euston Square',
         link: '#',
-        image: 'https://source.unsplash.com/random/600x600'
+        image: 'https://source.unsplash.com/random/600x600',
+        services: 'Hosting, Web Design, Paid Ads',
+        testimonial: {
+          show: false,
+          quote: "",
+          source: ''
+        }
       }, {
         title: '30 Euston Square 4',
         link: '#',
-        image: 'https://source.unsplash.com/random/600x600'
+        image: 'https://source.unsplash.com/random/600x600',
+        services: 'Hosting, Web Design, Paid Ads',
+        testimonial: {
+          show: true,
+          quote: "I wouldn't hesitate to use The Marketing Campaign Company again or receommend them to anybody",
+          source: 'Johanna Bryne, Searcys'
+        }
       }, {
         title: '30 Euston Square 1',
         link: '#',
-        image: 'https://source.unsplash.com/random/600x600'
+        image: 'https://source.unsplash.com/random/600x600',
+        services: 'Hosting, Web Design, Paid Ads',
+        testimonial: {
+          show: false,
+          quote: "",
+          source: ''
+        }
       }, {
         title: '30 Euston Square 2',
         link: '#',
-        image: 'https://source.unsplash.com/random/600x600'
+        image: 'https://source.unsplash.com/random/600x600',
+        services: 'Hosting, Web Design, Paid Ads',
+        testimonial: {
+          show: false,
+          quote: "",
+          source: ''
+        }
       }]
     }
   },
@@ -137,14 +179,39 @@ export default {
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
-    max-width: 900px;
+    max-width: 1140px;
     &__case-study {
         box-sizing: border-box;
         display: block;
         float: left;
         width: 50%;
+        @media screen and (max-width: 640px) {
+            width: 100%;
+        }
         &:nth-child(2) {
-            margin-top: 100px;
+            @media screen and (min-width: 641px) {
+                margin-top: 100px;
+            }
+        }
+        .tmcc-case-studies__case-study-image {
+            img {
+                transition: opacity 0.15s;
+            }
+        }
+        a {
+          &:hover {
+              .tmcc-case-studies__case-study-image {
+                  img {
+                      opacity: 0.85;
+                  }
+              }
+          }
+        }
+    }
+    &__case-study-image {
+        height: 600px;
+        @media screen and (max-width: 960px) {
+            height: 400px;
         }
     }
 }
