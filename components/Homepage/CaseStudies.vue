@@ -39,6 +39,7 @@
             <blockquote>
               <p v-text="casestudy.testimonial.quote"></p>
               <footer v-text="casestudy.testimonial.source"></footer>
+              <span class="quote-marks">"</span>
             </blockquote>
           </div>
         </div>
@@ -59,12 +60,12 @@ export default {
       featuredCaseStudy: {
         title: 'Searcys',
         link: '#',
-        image: 'https://source.unsplash.com/random/1500x500'
+        image: 'http://via.placeholder.com/1500x450'
       },
       casestudies: [{
         title: 'Now Health',
         link: '#',
-        image: 'https://source.unsplash.com/random/600x600',
+        image: 'http://via.placeholder.com/600x600',
         services: 'Hosting, Web Design, Paid Ads',
         testimonial: {
           show: true,
@@ -74,7 +75,7 @@ export default {
       }, {
         title: 'Platform7Teen',
         link: '#',
-        image: 'https://source.unsplash.com/random/600x600',
+        image: 'http://via.placeholder.com/600x600',
         services: 'Hosting, Web Design, Paid Ads',
         testimonial: {
           show: false,
@@ -84,7 +85,7 @@ export default {
       }, {
         title: '30 Euston Square',
         link: '#',
-        image: 'https://source.unsplash.com/random/600x600',
+        image: 'http://via.placeholder.com/600x600',
         services: 'Hosting, Web Design, Paid Ads',
         testimonial: {
           show: false,
@@ -94,7 +95,7 @@ export default {
       }, {
         title: '30 Euston Square 4',
         link: '#',
-        image: 'https://source.unsplash.com/random/600x600',
+        image: 'http://via.placeholder.com/600x600',
         services: 'Hosting, Web Design, Paid Ads',
         testimonial: {
           show: true,
@@ -104,7 +105,7 @@ export default {
       }, {
         title: '30 Euston Square 1',
         link: '#',
-        image: 'https://source.unsplash.com/random/600x600',
+        image: 'http://via.placeholder.com/600x600',
         services: 'Hosting, Web Design, Paid Ads',
         testimonial: {
           show: false,
@@ -114,7 +115,7 @@ export default {
       }, {
         title: '30 Euston Square 2',
         link: '#',
-        image: 'https://source.unsplash.com/random/600x600',
+        image: 'http://via.placeholder.com/600x600',
         services: 'Hosting, Web Design, Paid Ads',
         testimonial: {
           show: false,
@@ -213,6 +214,21 @@ export default {
         @media screen and (max-width: 960px) {
             height: 400px;
         }
+    }
+    &__testimonial {
+      blockquote {
+        position:relative;
+        color:#666;
+        span.quote-marks {
+          position:absolute;
+          top:0;
+          left:10%;
+          transform: translateY(-30%);
+          font-size: 10rem;
+          color:#e8e8e8;
+          z-index:-1;
+        }
+      }
     }
 }
 </style>

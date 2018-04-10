@@ -2,9 +2,9 @@
 <div class="uk-container uk-container-small">
   <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
     <div class="uk-navbar-left">
-        <a class="uk-navbar-item uk-logo" href="#">
-          <img src="/images/LOGO.svg">
-        </a>
+      <nuxt-link class="uk-navbar-item uk-logo" to="/">
+        <img src="/images/LOGO.svg">
+      </nuxt-link>
     </div>
     <div class="uk-navbar-right">
       <ul class="uk-navbar-nav">

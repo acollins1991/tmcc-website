@@ -1,11 +1,20 @@
 <template>
 <div>
-  tes
+  <Banner/>
+  <Team/>
 </div>
 </template>
 
 <script>
-export default {}
+import Banner from '../components/About/Banner'
+import Team from '../components/About/Team'
+
+export default {
+  components: {
+    Banner,
+    Team
+  }
+}
 </script>
 
 <style>
