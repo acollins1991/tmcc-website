@@ -127,6 +127,7 @@ export default {
   },
   mounted() {
 
+    // masonry layout
     var elem = document.querySelector('.tmcc-case-studies')
     var msnry = new Masonry(elem, {
       // options
@@ -200,13 +201,13 @@ export default {
             }
         }
         a {
-          &:hover {
-              .tmcc-case-studies__case-study-image {
-                  img {
-                      opacity: 0.85;
-                  }
-              }
-          }
+            &:hover {
+                .tmcc-case-studies__case-study-image {
+                    img {
+                        opacity: 0.85;
+                    }
+                }
+            }
         }
     }
     &__case-study-image {
@@ -216,19 +217,19 @@ export default {
         }
     }
     &__testimonial {
-      blockquote {
-        position:relative;
-        color:#666;
-        span.quote-marks {
-          position:absolute;
-          top:0;
-          left:10%;
-          transform: translateY(-30%);
-          font-size: 10rem;
-          color:#e8e8e8;
-          z-index:-1;
+        blockquote {
+            position: relative;
+            color: #666;
+            span.quote-marks {
+                position: absolute;
+                top: 0;
+                left: 10%;
+                transform: translateY(-30%);
+                font-size: 10rem;
+                color: #e8e8e8;
+                z-index: -1;
+            }
         }
-      }
     }
 }
 </style>
