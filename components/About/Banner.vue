@@ -1,7 +1,7 @@
 <template>
-<section class="uk-section uk-container uk-child-width-2-3" role="banner">
+<section class="uk-section uk-container" role="banner">
   <div class="uk-grid-collapse" uk-grid>
-    <div class="uk-width-4-5">
+    <div class="uk-width-4-5@m">
       <h1>Lorem ipsum is simply dummy text of the printing and typesetting industry</h1>
     </div>
   </div>

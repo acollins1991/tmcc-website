@@ -92,7 +92,7 @@
       <div>
         <h2 class="uk-h6 tmcc-font-montserrat uk-text-bold uk-text-uppercase">Hire</h2>
         <p class="uk-text-small">Want to create something with us?</p>
-        <a class="uk-link-reset uk-text-small uk-text-bold"><span uk-icon="icon: comment"></span> Chat with us</a>
+        <a class="uk-link-reset uk-text-small uk-text-bold tmcc-chat"><span uk-icon="icon: comment"></span> Chat with us</a>
       </div>
       <div>
         <h2 class="uk-h6 tmcc-font-montserrat uk-text-bold uk-text-uppercase">Let's talk business</h2>
@@ -110,6 +110,3 @@ export default {
   name: 'SiteFooter'
 }
 </script>
-
-<style lang="scss" scoped>
-</style>
