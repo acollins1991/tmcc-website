@@ -60,12 +60,12 @@ export default {
       featuredCaseStudy: {
         title: 'Searcys',
         link: '#',
-        image: 'http://via.placeholder.com/1500x450'
+        image: 'https://source.unsplash.com/WLUHO9A_xik/1500x500'
       },
       casestudies: [{
         title: 'Now Health',
         link: '#',
-        image: 'http://via.placeholder.com/600x600',
+        image: 'https://source.unsplash.com/WNZoVFUXE9E/540x600',
         services: 'Hosting, Web Design, Paid Ads',
         testimonial: {
           show: true,
@@ -75,7 +75,7 @@ export default {
       }, {
         title: 'Platform7Teen',
         link: '#',
-        image: 'http://via.placeholder.com/600x600',
+        image: 'https://source.unsplash.com/CAbSFT8LOj8/540x600',
         services: 'Hosting, Web Design, Paid Ads',
         testimonial: {
           show: false,
@@ -85,7 +85,7 @@ export default {
       }, {
         title: '30 Euston Square',
         link: '#',
-        image: 'http://via.placeholder.com/600x600',
+        image: 'https://source.unsplash.com/4aIOIjIFfus/540x600',
         services: 'Hosting, Web Design, Paid Ads',
         testimonial: {
           show: false,
@@ -95,7 +95,7 @@ export default {
       }, {
         title: '30 Euston Square 4',
         link: '#',
-        image: 'http://via.placeholder.com/600x600',
+        image: 'https://source.unsplash.com/gH0B2nJW06k/540x600',
         services: 'Hosting, Web Design, Paid Ads',
         testimonial: {
           show: true,
@@ -105,7 +105,7 @@ export default {
       }, {
         title: '30 Euston Square 1',
         link: '#',
-        image: 'http://via.placeholder.com/600x600',
+        image: 'https://source.unsplash.com/pitxaomeYKY/540x600',
         services: 'Hosting, Web Design, Paid Ads',
         testimonial: {
           show: false,
@@ -115,7 +115,7 @@ export default {
       }, {
         title: '30 Euston Square 2',
         link: '#',
-        image: 'http://via.placeholder.com/600x600',
+        image: 'https://source.unsplash.com/HMHz31V8GVg/540x600',
         services: 'Hosting, Web Design, Paid Ads',
         testimonial: {
           show: false,
