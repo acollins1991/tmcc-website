@@ -1,3 +1,5 @@
+const axios = require('axios')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -33,9 +35,26 @@ module.exports = {
      { src: '~/plugins/uikit.js', ssr: false }
   ],
   /*
+   ** Modules
+   */
+  /*
   ** Build configuration
   */
   mode: 'spa',
+  // Generate post urls
+  generate: {
+    routes: function () {
+      return axios.get('https://themarketingcampaigncompany.co.uk/wp-json/wp/v2/posts?per_page=100')
+        .then((response) => {
+           return response.data.map(post => {
+            return {
+              route: '/blog/' + post.slug,
+              payload: post
+            }
+          })
+        })
+    }
+  },
   build: {
     /*
     ** Run ESLint on save
