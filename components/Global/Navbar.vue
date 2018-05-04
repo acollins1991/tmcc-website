@@ -1,5 +1,5 @@
 <template>
-<div class="uk-container uk-container-small">
+<div class="uk-container">
   <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
     <div class="uk-navbar-left">
       <nuxt-link class="uk-navbar-item uk-logo" to="/">
@@ -11,6 +11,7 @@
         <nuxt-link tag="li" active-class="uk-active" exact to="/"><a>Home</a></nuxt-link>
         <nuxt-link tag="li" active-class="uk-active" exact to="/about"><a>About</a></nuxt-link>
         <nuxt-link tag="li" active-class="uk-active" exact to="/blog"><a>Blog</a></nuxt-link>
+        <nuxt-link tag="li" active-class="uk-active" exact to="/services"><a>Services</a></nuxt-link>
         <nuxt-link tag="li" active-class="uk-active" exact to="/contact"><a>Contact</a></nuxt-link>
       </ul>
     </div>

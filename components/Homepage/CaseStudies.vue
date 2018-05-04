@@ -28,7 +28,7 @@
           <a v-bind:key="index" v-bind:href="casestudy.link" class="uk-display-block uk-link-reset">
             <div class="uk-flex uk-flex-bottom uk-flex-between uk-margin-bottom">
               <h2 class="uk-h3 uk-margin-remove" v-text="casestudy.title"></h2>
-              <span class="uk-text-small">View the project <span uk-icon="icon: arrow-right"></span></span>
+              <span class="uk-text-small">View project <span uk-icon="icon: arrow-right"></span></span>
             </div>
             <div class="uk-cover-container tmcc-case-studies__case-study-image">
               <img v-bind:src="casestudy.image" uk-cover>

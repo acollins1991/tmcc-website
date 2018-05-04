@@ -23,8 +23,8 @@ $global-primary-background: #5031a9;
 
 // Your custom components
 /** Navbar **/
-$navbar-nav-item-height: 200px;
-$navbar-nav-item-font-family: 'Montserrat', sans-serif;
+$navbar-nav-item-height: 125px;
+$navbar-nav-item-padding-horizontal: 24px;
 
 // Import UIkit.
 @import "../node_modules/uikit/src/scss/uikit.scss";
