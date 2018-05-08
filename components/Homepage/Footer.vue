@@ -73,7 +73,7 @@
 
       <div class="uk-flex uk-flex-column uk-flex-center uk-flex-none uk-padding">
         <h2 class="uk-text-center">Have a project in mind?</h2>
-        <div>
+        <div class="uk-flex uk-flex-center">
           <a class="uk-button uk-button-default" href="/contact">Get Started <span uk-icon="icon: arrow-right"></span></a>
         </div>
       </div>
