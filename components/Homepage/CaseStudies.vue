@@ -192,7 +192,7 @@ export default {
         }
         &:nth-child(2) {
             @media screen and (min-width: 641px) {
-                margin-top: 100px;
+                margin-top: 60px;
             }
         }
         .tmcc-case-studies__case-study-image {
