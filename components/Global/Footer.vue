@@ -18,13 +18,13 @@
       </a>
     </div>
 
-    <div class="uk-margin-top uk-flex uk-flex-right uk-child-width-1-3 tmcc-font-montserrat" uk-grid>
-      <div>
+    <div class="uk-margin-top uk-flex uk-flex-right tmcc-font-montserrat" uk-grid>
+      <div class="uk-width-1-5">
         <h2 class="uk-h6 tmcc-font-montserrat uk-text-bold uk-text-uppercase">Hire</h2>
         <p class="uk-text-small">Want to create something with us?</p>
         <a class="uk-link-reset uk-text-small uk-text-bold tmcc-chat"><span uk-icon="icon: comment"></span> Chat with us</a>
       </div>
-      <div>
+      <div class="uk-width-2-5">
         <h2 class="uk-h6 tmcc-font-montserrat uk-text-bold uk-text-uppercase">Let's talk business</h2>
         <address class="uk-text-small">1b Kilmuir House, Depot Road, Epsom, Surrey, KT17 4RJ</address>
         <a class="uk-link-reset uk-text-small uk-display-block" href="mailto:info@themarketingcampaigncopany.co.uk">info@themarketingcampaigncopany.co.uk</a>
