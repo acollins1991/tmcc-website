@@ -1,5 +1,5 @@
 <template>
-  <footer class="uk-background-muted uk-section-small uk-margin-xlarge-top">
+  <footer class="uk-background-muted uk-section-small uk-margin-top">
     <div class="uk-container uk-container-large">
       <div class="uk-flex uk-flex-column uk-flex-center uk-flex-none uk-padding">
         <h2 class="uk-text-center">Have a project in mind?</h2>
