@@ -3,7 +3,7 @@
   <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
     <div class="uk-navbar-left">
       <nuxt-link class="uk-navbar-item uk-logo" to="/">
-        <img src="/images/LOGO.svg">
+        <img src="/images/tmcc-logo.svg">
       </nuxt-link>
     </div>
     <div class="uk-navbar-right">
