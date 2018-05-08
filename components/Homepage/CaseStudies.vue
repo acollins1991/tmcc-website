@@ -3,7 +3,7 @@
 
   <!-- Featured Case Study -->
   <div class="uk-height-large uk-margin-xlarge-bottom tmcc-featured-case-study uk-background-center-left uk-background-norepeat uk-background-cover" v-bind:style="'background-image:url('+featuredCaseStudy.image+')'">
-    <div class="uk-container uk-container-small uk-height-1-1 tmcc-featured-case-study__container">
+    <div class="uk-container uk-height-1-1 tmcc-featured-case-study__container">
       <div class="uk-flex uk-flex-between uk-height-1-1">
         <div class="tmcc-featured-case-study__link-container">
           <a v-bind:href="featuredCaseStudy.link" class="uk-display-block uk-link-reset uk-background-secondary uk-light uk-flex uk-flex-column tmcc-featured-case-study__link">
