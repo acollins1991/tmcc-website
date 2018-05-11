@@ -27,6 +27,7 @@ export default {
 
 <style lang="scss" scoped>
 .uk-logo {
+    padding: 0;
     img {
         width: 150px;
     }
