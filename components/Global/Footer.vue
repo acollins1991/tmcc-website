@@ -13,7 +13,7 @@
       <nuxt-link to='/about' class="uk-display-block uk-link-reset uk-width-2-5 uk-background-primary uk-padding uk-text-center">
         <span style="color:#ffffff;">About Us <span uk-icon="icon: arrow-right; ratio: 2;"></span></span>
       </nuxt-link>
-      <nuxt-link to='/blog' class="uk-display-block uk-link-reset uk-width-3-5 uk-padding uk-text-center" style="background-color:#6640d6;">
+      <nuxt-link to='/blog' class="uk-display-block uk-link-reset uk-width-3-5 uk-padding uk-text-center" style="background-color:#52439C;">
         <span style="color:#ffffff;">Read more from our blog <span uk-icon="icon: arrow-right; ratio: 2;"></span></span>
       </nuxt-link>
     </div>
