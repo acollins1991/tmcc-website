@@ -37,7 +37,7 @@
         Dee Byrne
       </template>
       <template slot="position">
-        PR Manager
+        Account Director
       </template>
     </TeamMember>
 
