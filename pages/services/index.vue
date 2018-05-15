@@ -1,6 +1,8 @@
 <template>
 <div>
- <Banner/>
+ <Banner>
+   Here's what we can do for you
+ </Banner>
 
  <div class="uk-container">
 
