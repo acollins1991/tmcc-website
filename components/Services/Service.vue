@@ -1,6 +1,6 @@
 <template>
   <div class="uk-margin-xlarge-bottom tmcc-service">
-    <div class="tmcc-service__description">
+    <div class="tmcc-service__description" data-aos="fade-up">
       <slot name="description"></slot>
     </div>
     <slot name="image"></slot>
@@ -8,8 +8,14 @@
 </template>
 
 <script>
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 export default {
-  name: 'Service'
+  name: 'Service',
+  mounted(){
+    AOS.init();
+  }
 }
 </script>
 
@@ -32,7 +38,7 @@ export default {
     width:75%;
     z-index:-1;
   }
-  &:nth-child(2) {
+  &:nth-child(2n) {
     .tmcc-service__description {
       float:right;
     }
