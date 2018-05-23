@@ -121,30 +121,54 @@ export default {
             background-color: #FFF568;
             background-image: url("/images/fionaface.svg");
         }
-        @media screen and (min-width:1150px) {
+        &--james {
+            top: 300px;
+            left: 30%;
+        }
+        &--anthony {
+            top: 350px;
+            left: 3%;
+        }
+        &--chloe {
+            top: 48px;
+            left: 15%;
+        }
+        &--dee {
+            top: 135px;
+            left: 50%;
+        }
+        &--danny {
+            top: 400px;
+            left: 60%;
+        }
+        &--fiona {
+            top: 95px;
+            right: 3%;
+        }
+        @media screen and (max-width:1150px) {
             &--james {
-                top: 300px;
-                left: 30%;
+                top: 350px;
+                left: 35%;
             }
             &--anthony {
-                top: 350px;
-                left: 3%;
+                top: 450px;
+                left: 10%;
             }
             &--chloe {
                 top: 48px;
-                left: 15%;
+                left: 12%;
             }
             &--dee {
-                top: 135px;
-                left: 50%;
+                top: 40px;
+                left: 38%;
             }
             &--danny {
-                top: 400px;
-                left: 60%;
+                top: 425px;
+                right: 45%;
             }
             &--fiona {
                 top: 95px;
-                right: 3%;
+                right: 5%;
             }
         }
     }
