@@ -89,37 +89,37 @@ export default {
         background-repeat: no-repeat;
         background-position: center;
         &:hover {
-          z-index:7;
+            z-index: 7;
         }
         &--james {
             z-index: 6;
-            background-color:#3CB878;
-            background-image: url('/images/jamesface.svg');
+            background-color: #3CB878;
+            background-image: url("/images/jamesface.svg");
         }
         &--anthony {
             z-index: 5;
             background-color: #F69679;
-            background-image: url('/images/antface.svg');
+            background-image: url("/images/antface.svg");
         }
         &--chloe {
             z-index: 4;
             background-color: #F26D7D;
-            background-image: url('/images/chloeface.svg');
+            background-image: url("/images/chloeface.svg");
         }
         &--dee {
             z-index: 3;
             background-color: #8560A8;
-            background-image: url('/images/deeface.svg');
+            background-image: url("/images/deeface.svg");
         }
         &--danny {
             z-index: 2;
             background-color: #448CCB;
-            background-image: url('/images/dannyface.svg');
+            background-image: url("/images/dannyface.svg");
         }
         &--fiona {
             z-index: 1;
             background-color: #FFF568;
-            background-image: url('/images/fionaface.svg');
+            background-image: url("/images/fionaface.svg");
         }
         @media screen and (min-width:1150px) {
             &--james {
