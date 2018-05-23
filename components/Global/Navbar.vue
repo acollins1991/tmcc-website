@@ -7,13 +7,16 @@
       </nuxt-link>
     </div>
     <div class="uk-navbar-right">
-      <ul class="uk-navbar-nav">
+      <ul class="uk-navbar-nav uk-visible@s">
         <nuxt-link tag="li" active-class="uk-active" exact to="/"><a>Home</a></nuxt-link>
         <nuxt-link tag="li" active-class="uk-active" exact to="/about"><a>About</a></nuxt-link>
         <nuxt-link tag="li" active-class="uk-active" exact to="/blog"><a>Blog</a></nuxt-link>
         <nuxt-link tag="li" active-class="uk-active" exact to="/services"><a>Services</a></nuxt-link>
         <nuxt-link tag="li" active-class="uk-active" exact to="/contact"><a>Contact</a></nuxt-link>
       </ul>
+      <a class="uk-navbar-toggle uk-hidden@s" href="#" uk-toggle="target: #OffCanvasMenu">
+        <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+      </a>
     </div>
   </nav>
 </div>
