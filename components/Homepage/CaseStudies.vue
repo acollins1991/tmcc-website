@@ -189,6 +189,7 @@ export default {
         width: 50%;
         @media screen and (max-width: 640px) {
             width: 100%;
+            margin-bottom: 40px;
         }
         &:nth-child(2) {
             @media screen and (min-width: 641px) {
@@ -229,6 +230,9 @@ export default {
                 color: #e8e8e8;
                 z-index: -1;
             }
+        }
+        @media screen and (max-width: 640px) {
+            margin-bottom: 0!important;
         }
     }
 }
