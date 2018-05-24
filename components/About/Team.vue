@@ -160,7 +160,7 @@ export default {
             }
             &--dee {
                 top: 40px;
-                left: 38%;
+                left: 41%;
             }
             &--danny {
                 top: 425px;
