@@ -100,6 +100,6 @@
 
 <script>
 export default {
-  name: 'HomepageFooter'
+  name: 'SiteFooter'
 }
 </script>

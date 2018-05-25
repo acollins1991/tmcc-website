@@ -1,7 +1,5 @@
 // 1. Your custom variables and variable overwrites.
-
 // COLOURS
-
 // FONTS
 $global-font-family: 'Merriweather', serif;
 $global-font-size: 18px;
@@ -12,33 +10,30 @@ $base-blockquote-font-style: normal;
 .tmcc-font-montserrat {
   font-family: 'Montserrat', sans-serif!important;
 }
-
 // GLOBAL VARIABLE CHANGES RELATING TO UIKIT
 $global-primary-background: #5031a9;
-
 // Import default variables and available mixins.
 @import "../node_modules/uikit/src/scss/variables.scss";
 @import "../node_modules/uikit/src/scss/mixins.scss";
-
 // Your custom mixin overwrites
-
 // Your custom components
 /** Navbar **/
 $navbar-nav-item-height: 125px;
 $navbar-nav-item-padding-horizontal: 24px;
-
 // Import UIkit.
 @import "../node_modules/uikit/src/scss/uikit.scss";
-
 // Page transitions
-  // on first page load
+// on first page load
 body {
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 
-.page-enter-active, .page-leave-active {
-  transition: opacity .5s
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
 }
-.page-enter, .page-leave-active {
-  opacity: 0
+
+.page-enter,
+.page-leave-active {
+  opacity: 0;
 }

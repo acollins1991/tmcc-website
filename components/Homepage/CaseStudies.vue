@@ -6,10 +6,10 @@
     <div class="uk-container uk-height-1-1 tmcc-featured-case-study__container">
       <div class="uk-flex uk-flex-between uk-height-1-1">
         <div class="tmcc-featured-case-study__link-container">
-          <a v-bind:href="featuredCaseStudy.link" class="uk-display-block uk-link-reset uk-background-secondary uk-light uk-flex uk-flex-column tmcc-featured-case-study__link">
+          <nuxt-link v-bind:to="featuredCaseStudy.link" class="uk-display-block uk-link-reset uk-background-secondary uk-light uk-flex uk-flex-column tmcc-featured-case-study__link">
             <span class="uk-display-block uk-margin-small-bottom uk-light view-project">View Project <span uk-icon="icon: arrow-right"></span></span>
             <h2 class="uk-h3 uk-margin-remove title" v-text="featuredCaseStudy.title">Now Health</h2>
-          </a>
+          </nuxt-link>
         </div>
         <div style="align-self: center;">
           <h2>Our Work</h2>
@@ -25,7 +25,7 @@
 
     <template v-for="(casestudy, index) in casestudies">
         <div v-bind:key="index" class="uk-padding-small tmcc-case-studies__case-study">
-          <a v-bind:key="index" v-bind:href="casestudy.link" class="uk-display-block uk-link-reset">
+          <nuxt-link v-bind:key="index" v-bind:to="casestudy.link" class="uk-display-block uk-link-reset">
             <div class="uk-flex uk-flex-bottom uk-flex-between uk-margin-bottom">
               <h2 class="uk-h3 uk-margin-remove" v-text="casestudy.title"></h2>
               <span class="uk-text-small">View project <span uk-icon="icon: arrow-right"></span></span>
@@ -34,7 +34,7 @@
               <img v-bind:src="casestudy.image" uk-cover>
             </div>
             <span class="uk-text-muted uk-text-center uk-text-small uk-display-block uk-margin-top uk-margin-bottom" v-text="casestudy.services">Hosting, Web Design, Paid Ads</span>
-          </a>
+          </nuxt-link>
           <div class="uk-padding-small uk-margin-large-top uk-margin-large-bottom tmcc-case-studies__testimonial" v-if="casestudy.testimonial.show">
             <blockquote>
               <p v-text="casestudy.testimonial.quote"></p>
@@ -59,12 +59,12 @@ export default {
     return {
       featuredCaseStudy: {
         title: 'Searcys',
-        link: '#',
+        link: '/casestudies/',
         image: 'https://source.unsplash.com/WLUHO9A_xik/1500x500'
       },
       casestudies: [{
         title: 'Now Health',
-        link: '#',
+        link: '/casestudies/30eustonsquare/',
         image: 'https://source.unsplash.com/WNZoVFUXE9E/540x600',
         services: 'Hosting, Web Design, Paid Ads',
         testimonial: {

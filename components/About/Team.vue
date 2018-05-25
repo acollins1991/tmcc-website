@@ -155,7 +155,7 @@ export default {
                 left: 10%;
             }
             &--chloe {
-                top: 48px;
+                top: 110px;
                 left: 12%;
             }
             &--dee {

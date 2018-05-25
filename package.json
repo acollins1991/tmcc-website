@@ -13,13 +13,13 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "aos": "^2.2.0",
+    "aos": "^2.3.0",
     "axios": "^0.18.0",
     "masonry-layout": "^4.2.1",
     "node-sass": "^4.9.0",
     "nuxt": "^1.0.0",
     "sass-loader": "^6.0.7",
-    "uikit": "^3.0.0-beta.42"
+    "uikit": "^3.0.0-rc.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
