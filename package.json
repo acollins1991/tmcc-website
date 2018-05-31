@@ -5,7 +5,7 @@
   "author": "acollins1991 <a.r.c_@hotmail.co.uk>",
   "private": true,
   "scripts": {
-    "dev": "nuxt --spa",
+    "dev": "HOST=127.0.0.1 PORT=3333 nuxt --spa",
     "build": "nuxt build --spa",
     "start": "nuxt start",
     "generate": "nuxt generate",
