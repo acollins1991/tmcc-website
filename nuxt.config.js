@@ -41,20 +41,6 @@ module.exports = {
   ** Build configuration
   */
   mode: 'spa',
-  // Generate post urls
-  generate: {
-    routes: function () {
-      return axios.get('https://themarketingcampaigncompany.co.uk/wp-json/wp/v2/posts?per_page=100')
-        .then((response) => {
-           return response.data.map(post => {
-            return {
-              route: '/blog/' + post.slug,
-              payload: post
-            }
-          })
-        })
-    }
-  },
   // environmental variables
   env: {
     cmsAPIBase: 'http://content.themarketingcampaigncompany.co.uk/wp-json/wp/v2/'
