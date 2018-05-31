@@ -55,6 +55,10 @@ module.exports = {
         })
     }
   },
+  // environmental variables
+  env: {
+    cmsAPIBase: 'http://content.themarketingcampaigncompany.co.uk/wp-json/wp/v2/'
+  },
   build: {
     /*
     ** Run ESLint on save
