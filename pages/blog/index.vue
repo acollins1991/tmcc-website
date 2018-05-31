@@ -1,6 +1,6 @@
 <template>
   <div>
-    blog
+    <nuxt-link to="/blog/wish-splendid-effervescent-opulent-christmas-2017">blog</nuxt-link>
   </div>
 </template>
 
