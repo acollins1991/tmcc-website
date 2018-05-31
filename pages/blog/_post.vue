@@ -13,7 +13,8 @@ export default {
     return {
       postData: '',
       postTitle: '',
-      postContent: ''
+      postContent: '',
+      postExcerpt: ''
     }
   },
   // redirect if slug does not exist in wordpress and populate data is successful
@@ -25,10 +26,19 @@ export default {
         this.postData = res.data[0]
         this.postTitle = this.postData.title.rendered
         this.postContent = this.postData.content.rendered
+        this.postExcerpt = this.postData.excerpt.rendered
       })
       .catch((e) => {
         error({ statusCode: 404, message: 'Post not found' })
       })
+  },
+  head () {
+    return {
+      title: this.postTitle,
+      meta: [
+        { hid: 'description', name: 'description', content: this.postExcerpt }
+      ]
+    }
   }
 }
 </script>
