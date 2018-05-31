@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div class="uk-background-cover uk-background-center-center uk-background-norepeat tmcc-casestudypage__banner" style="background-image:url(http://www.soaringww.com/wp-content/uploads/2016/01/Feature-Image1.jpg);">
+  <div class="uk-background-cover uk-background-center-center uk-background-norepeat tmcc-casestudypage__banner" style="background-image:url(http://via.placeholder.com/2000x1000);">
     <SiteNavbar/>
     <div class="uk-container uk-text-center uk-margin-xlarge-top uk-margin-large-bottom uk-light">
       <h1 class="uk-heading-primary">30 Euston Square</h1>
