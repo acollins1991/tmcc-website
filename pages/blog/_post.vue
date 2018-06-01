@@ -23,13 +23,23 @@ export default {
     const cmsAPIBase = process.env.cmsAPIBase
     axios.get(cmsAPIBase + 'posts/?slug=' + postSlug)
       .then((res) => {
-        this.postData = res.data[0]
-        this.postTitle = this.postData.title.rendered
-        this.postContent = this.postData.content.rendered
-        this.postExcerpt = this.postData.excerpt.rendered
+        if (!res.data[0]) {
+          this.$root.error({
+            'statusCode': 404,
+            'message': 'OK'
+          })
+        } else {
+          this.postData = res.data[0]
+          this.postTitle = this.postData.title.rendered
+          this.postContent = this.postData.content.rendered
+          this.postExcerpt = this.postData.excerpt.rendered
+        }
       })
       .catch((e) => {
-        error({ statusCode: 404, message: 'Post not found' })
+        this.$root.error({
+          'statusCode': 404,
+          'message': 'OK'
+        })
       })
   },
   head () {
