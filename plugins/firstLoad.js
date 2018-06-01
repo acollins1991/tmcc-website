@@ -6,5 +6,5 @@ export default function ({ app }) {
       // remove opacity styling
       document.body.removeAttribute("style")
     }, 1500)
-  })
+  }) 
 }
