@@ -1,6 +1,6 @@
 <template>
 <div class="uk-container uk-container-small">
-  <h1 v-text="postTitle"></h1>
+  <h1 v-html="postTitle"></h1>
   <div v-html="postContent"></div>
 </div>
 </template>
