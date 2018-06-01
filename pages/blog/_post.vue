@@ -42,12 +42,14 @@ export default {
         })
       })
   },
-  head () {
+  head() {
     return {
       title: this.postTitle,
-      meta: [
-        { hid: 'description', name: 'description', content: this.postExcerpt }
-      ]
+      meta: [{
+        hid: 'description',
+        name: 'description',
+        content: this.postExcerpt
+      }]
     }
   }
 }
