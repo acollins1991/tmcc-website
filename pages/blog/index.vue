@@ -8,7 +8,6 @@
         <a class="uk-link-reset" v-bind:href="blogUrl(post.slug)" v-bind:key="index">
           <article>
             <img src="http://via.placeholder.com/580x350" alt="post.title.rendered">
-            <span class="uk-text-meta" v-text="postDate(post.modified)"></span>
             <h1 class="uk-h3" v-html="post.title.rendered"></h1>
             <span class="uk-text-meta">read more <span uk-icon="chevron-right"></span></span>
           </article>
@@ -38,11 +37,6 @@ export default {
   methods: {
     blogUrl: (slug) => {
       return '/blog/'+slug
-    }
-  },
-  methods: {
-    postDate: (unformattedPostDate) => {
-      return moment(unformattedPostDate).format()
     }
   }
 }
