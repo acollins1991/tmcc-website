@@ -1,9 +1,32 @@
 <template>
 <div class="uk-container uk-section">
   <p class="tmcc-font-montserrat">Stay up to date</p>
-  <h1>Read our latest news</h1>
-  <nuxt-link to="/blog/wish-splendid-effervescent-opulent-christmas-2017">blog</nuxt-link>
-  <div class="uk-child-width-1-2" uk-grid>
+  <h1>Read our latest posts</h1>
+  <!-- placeholders -->
+  <div class="uk-child-width-1-2" uk-grid v-if="loading">
+    <content-placeholders :rounded="true">
+      <content-placeholders-img />
+      <content-placeholders-heading />
+      <content-placeholders-text />
+    </content-placeholders>
+    <content-placeholders :rounded="true">
+      <content-placeholders-img />
+      <content-placeholders-heading />
+      <content-placeholders-text />
+    </content-placeholders>
+    <content-placeholders :rounded="true">
+      <content-placeholders-img />
+      <content-placeholders-heading />
+      <content-placeholders-text />
+    </content-placeholders>
+    <content-placeholders :rounded="true">
+      <content-placeholders-img />
+      <content-placeholders-heading />
+      <content-placeholders-text />
+    </content-placeholders>
+  </div>
+  <!-- posts -->
+  <div class="uk-child-width-1-2" uk-grid v-else>
     <template v-for="(post, index) in posts">
         <a class="uk-link-reset" v-bind:href="blogUrl(post.slug)" v-bind:key="index">
           <article>
@@ -24,6 +47,7 @@ import moment from 'moment'
 export default {
   data() {
     return {
+      loading: true,
       posts: ''
     }
   },
@@ -31,12 +55,13 @@ export default {
     const cmsAPIBase = process.env.cmsAPIBase
     axios.get(cmsAPIBase + 'posts')
       .then((res) => {
-        this.posts = res.data;
+        this.loading = false
+        this.posts = res.data
       })
   },
   methods: {
     blogUrl: (slug) => {
-      return '/blog/'+slug
+      return '/blog/' + slug
     }
   }
 }

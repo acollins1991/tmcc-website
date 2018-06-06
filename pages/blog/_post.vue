@@ -1,7 +1,18 @@
 <template>
 <div class="uk-container uk-container-small">
+  <template v-if="loading">
+    <content-placeholders :rounded="true">
+      <content-placeholders-heading />
+      <content-placeholders-heading />
+      <content-placeholders-text />
+      <content-placeholders-text />
+      <content-placeholders-text />
+    </content-placeholders>
+  </template>
+  <template v-else>
   <h1 v-html="postTitle"></h1>
   <div v-html="postContent"></div>
+  </template>
 </div>
 </template>
 
@@ -11,6 +22,7 @@ import axios from 'axios'
 export default {
   data() {
     return {
+      loading: true,
       postData: '',
       postTitle: '',
       postContent: '',
@@ -29,6 +41,7 @@ export default {
             'message': 'OK'
           })
         } else {
+          this.loading = false
           this.postData = res.data[0]
           this.postTitle = this.postData.title.rendered
           this.postContent = this.postData.content.rendered
