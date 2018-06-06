@@ -20,7 +20,8 @@
     "node-sass": "^4.9.0",
     "nuxt": "^1.0.0",
     "sass-loader": "^6.0.7",
-    "uikit": "^3.0.0-rc.2"
+    "uikit": "^3.0.0-rc.2",
+    "vue-content-placeholders": "^0.2.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",

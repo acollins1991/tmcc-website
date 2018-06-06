@@ -29,7 +29,8 @@ module.exports = {
    */
   plugins: [
      // {src: '~/plugins/firstLoad.js', ssr: false},
-     { src: '~/plugins/uikit.js', ssr: false }
+     { src: '~/plugins/uikit.js', ssr: false },
+     { src: '~/plugins/vue-content-placeholders.js', ssr: false }
   ],
   /*
    ** Modules
