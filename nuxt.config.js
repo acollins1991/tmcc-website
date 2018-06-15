@@ -5,11 +5,12 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'tmcc-v2',
+    title: 'The Marketing Campaign Company - Experts in Digital Marketing and Public Relations',
     meta: [
       { charset: 'utf-8' },
+      { name: 'robots', content: 'noindex, nofollow' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { hid: 'description', name: 'description', content: 'Experts in marketing strategy & planning, digital marketing, public relations, and communications' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -19,7 +20,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#5031a9' },
+  loading: { color: '#fd9f44' },
   /*
    ** CSS or SCSS
    */
@@ -41,7 +42,8 @@ module.exports = {
   mode: 'spa',
   // environmental variables
   env: {
-    cmsAPIBase: 'http://content.themarketingcampaigncompany.co.uk/wp-json/wp/v2/'
+    cmsAPIBase: 'https://cms.themarketingcampaigncompany.co.uk/wp-json/wp/v2/',
+    contactFormAPIBase: 'https://cms.themarketingcampaigncompany.co.uk/wp-json/contactform/v1/post'
   },
   build: {
     /*

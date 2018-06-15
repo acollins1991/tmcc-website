@@ -1,8 +1,8 @@
 <template>
-<div class="uk-container uk-container-small">
+<div class="uk-container uk-container-small tmcc-post">
   <template v-if="loading">
     <content-placeholders :rounded="true">
-      <content-placeholders-heading />
+      <content-placeholders-img />
       <content-placeholders-heading />
       <content-placeholders-text />
       <content-placeholders-text />
@@ -10,8 +10,9 @@
     </content-placeholders>
   </template>
   <template v-else>
-  <h1 v-html="postTitle"></h1>
-  <div v-html="postContent"></div>
+    <img src="http://via.placeholder.com/980x450">
+    <h1 v-html="postTitle"></h1>
+    <div v-html="postContent"></div>
   </template>
 </div>
 </template>
@@ -68,5 +69,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+.tmcc-post {
+  img {
+    display:block;
+    margin:auto;
+  }
+}
 </style>

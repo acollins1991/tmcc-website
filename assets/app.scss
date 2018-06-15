@@ -1,17 +1,14 @@
 // 1. Your custom variables and variable overwrites.
 // COLOURS
 // FONTS
-$global-font-family: 'Merriweather', serif;
+$global-font-family: 'Montserrat', serif;
 $global-font-size: 18px;
-$global-color: #444;
+$global-color: #333333;
+$base-heading-font-family: 'Merriweather', san-serif;
 $base-heading-font-weight: 300;
 $base-blockquote-font-style: normal;
-// custom utility to change font to Montserrat
-.tmcc-font-montserrat {
-  font-family: 'Montserrat', sans-serif!important;
-}
 // GLOBAL VARIABLE CHANGES RELATING TO UIKIT
-$global-primary-background: #5031a9;
+$global-primary-background: #e67e22;
 // Import default variables and available mixins.
 @import "../node_modules/uikit/src/scss/variables.scss";
 @import "../node_modules/uikit/src/scss/mixins.scss";
@@ -20,6 +17,22 @@ $global-primary-background: #5031a9;
 /** Navbar **/
 $navbar-nav-item-height: 125px;
 $navbar-nav-item-padding-horizontal: 24px;
+@mixin hook-navbar-nav-item(){
+  position:relative;
+  &:after {
+    content: '';
+    width: 16px;
+    position: absolute;
+    left: 50%;
+    top:80px;
+    transform: translateX(-50%);
+  }
+}
+@mixin hook-navbar-nav-item-active() {
+  &:after {
+    border-bottom: solid #fd9f44 3px;
+  }
+}
 // Import UIkit.
 @import "../node_modules/uikit/src/scss/uikit.scss";
 // Page transitions
@@ -30,7 +43,8 @@ body {
 
 .page-enter-active,
 .page-leave-active {
-  transition: opacity 0.5s;
+  transition: opacity 0.75s;
+  transition-delay: 0.25s;
 }
 
 .page-enter,

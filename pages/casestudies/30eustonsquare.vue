@@ -1,8 +1,8 @@
 <template>
 <div>
   <div class="uk-background-cover uk-background-center-center uk-background-norepeat tmcc-casestudypage__banner" style="background-image:url(http://via.placeholder.com/2000x1000);">
-    <SiteNavbar/>
-    <div class="uk-container uk-text-center uk-margin-xlarge-top uk-margin-large-bottom uk-light">
+    <SiteNavbar class="tmcc-casestudypage__navbar" />
+    <div class="uk-container uk-text-center uk-margin-xlarge-top uk-margin-large-bottom uk-light tmcc-casestudypage__heading">
       <h1 class="uk-heading-primary">30 Euston Square</h1>
       <p class="uk-lead">We've reinvigorated the digital real estate of this prestigious London event venue.</p>
     </div>
@@ -82,7 +82,32 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.tmcc-casestudypage__banner {
-    height: 600px;
+.tmcc-casestudypage {
+    &__navbar {
+        position: relative;
+        z-index: 3;
+    }
+    &__heading {
+        position: relative;
+        z-index: 2;
+    }
+    &__banner {
+        position: relative;
+        height: 600px;
+        &__heading {
+            position: relative;
+            z-index: 2;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.1) 100%);
+            z-index: 1;
+        }
+    }
 }
 </style>

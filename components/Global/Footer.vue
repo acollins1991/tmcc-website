@@ -81,7 +81,7 @@
       </nuxt-link>
     </div>
 
-    <div class="uk-margin-top uk-flex uk-flex-right tmcc-font-montserrat" uk-grid>
+    <div class="uk-margin-top uk-flex uk-flex-right" uk-grid>
       <div class="uk-width-1-5@s uk-width-1-1">
         <h2 class="uk-h6 tmcc-font-montserrat uk-text-bold uk-text-uppercase">Hire</h2>
         <p class="uk-text-small">Want to create something with us?</p>

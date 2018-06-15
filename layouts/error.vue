@@ -8,6 +8,14 @@
 
 <script>
 export default {
-  props: ['error']
+  props: ['error'],
+  head(){
+    return {
+      title: 'Page Not Found - The Marketing Campaign Company',
+      meta: [
+        { hid: 'description', name: 'description', content: "It doesn't look like the page exists" }
+      ]
+    }
+  }
 }
 </script>

@@ -18,6 +18,14 @@ import Banner from '../components/Contact/Banner'
 import Form from '../components/Contact/Form'
 
 export default {
+  head () {
+    return {
+      title: 'Contact Us - The Marketing Campaign Company',
+      meta: [
+        { hid: 'description', name: 'description', content: "If you're looking for marketing services we can help. Get in touch to see how TMCC can help your business." }
+      ]
+    }
+  },
   components: {
     Banner,
     Form
