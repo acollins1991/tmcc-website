@@ -1,6 +1,6 @@
 <template>
 <section class="uk-section-large uk-container uk-text-center" role="banner">
-  <h1>Experts in Digital Marketing<br> and Public Relations</h1>
+  <h1>The Experts in Digital Marketing<br> and Public Relations</h1>
   <p>Based in Epsom, Surrey, UK</p>
 </section>
 </template>
