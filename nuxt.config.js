@@ -48,7 +48,7 @@ module.exports = {
   // generate dynamic routes for posts on production
   generate: {
     routes: function () {
-      return axios.get('https://cms.themarketingcampaigncompany.co.uk/wp-json/wp/v2/posts?per_page=99')
+      return axios.get('https://cms.themarketingcampaigncompany.co.uk/wp-json/wp/v2/posts?per_page=100')
       .then((res) => {
         return res.data.map((post) => {
           return '/blog/' + post.slug
