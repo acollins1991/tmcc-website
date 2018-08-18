@@ -45,6 +45,17 @@ module.exports = {
     cmsAPIBase: 'https://cms.themarketingcampaigncompany.co.uk/wp-json/wp/v2/',
     contactFormAPIBase: 'https://cms.themarketingcampaigncompany.co.uk/wp-json/contactform/v1/post'
   },
+  // generate dynamic routes for posts on production
+  generate: {
+    routes: function () {
+      return axios.get('https://cms.themarketingcampaigncompany.co.uk/wp-json/wp/v2/posts')
+      .then((res) => {
+        return res.data.map((post) => {
+          return '/blog/' + post.slug
+        })
+      })
+    }
+  },
   build: {
     /*
     ** Run ESLint on save
