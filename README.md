@@ -1,4 +1,4 @@
-# tmcc-v2
+# Front-End for TMCC website (unfinished and archived for portfolio)
 
 > Nuxt.js project
 
